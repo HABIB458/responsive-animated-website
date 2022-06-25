@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/responsive-animated-website/static/css/main.1969dff5.css",
+    "main.js": "/responsive-animated-website/static/js/main.a162af3f.js",
+    "index.html": "/responsive-animated-website/index.html",
+    "static/media/index.cjs": "/responsive-animated-website/static/media/index.cd351d7c31d0d3fccf96.cjs",
+    "main.1969dff5.css.map": "/responsive-animated-website/static/css/main.1969dff5.css.map",
+    "main.a162af3f.js.map": "/responsive-animated-website/static/js/main.a162af3f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1969dff5.css",
+    "static/js/main.a162af3f.js"
+  ]
+}
