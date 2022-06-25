@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*body{
+  box-sizing: border-box;
+  font-family: Josefin Sans, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  background-color: #ffff !important;
+}
+.navbar a{
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.navbar a:hover{
+  color: red !important;
+}
+.navbar a:active{
+  color: #e5d207 !important;
+}
+.navbar-brand{
+  font-size: 1.9rem !important;
+  font-weight: 600;
+  color:#353e3e !important;
+}
+.menu-active{
+  color:#353e3e !important;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-link {
+  color:rgb(221, 88, 177) !important;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-weight: bold; */
+}
+.nav-link:focus{
+  font-weight: bold;
+  color: rgb(85, 85, 85) !important;
+  border-bottom: 3px solid #565387;
+}
+@media (max-width: 991px) {
+  .nav-link:focus{
+    /* font-weight: bold;
+    color: rgb(85, 85, 85); */
+    border-bottom: none;
+    /* border-bottom: 3px solid #565387; */
+  }
+}
+.btn-get-started{
+  color: #163353;
+  border-radius: 2rem;
+  outline: #163353 solid 2px;
+  text-decoration: none;
+  transition: all 0.25s ease-in;
+
+}
+.btn-get-started:hover{
+  color: #ffb20a;
+  font-weight: bold;
+  border-radius: 2rem;
+  text-decoration: none;
+  background: linear-gradient(70deg, #163353 40%,orange 100%);
+}
+.brand-name{
+  color: #163353; /* we use this blue color instead of purple on all over the classes.*/
+}
+
+/* ===============================================================
+#Main Landing section
+=============================================================== */
+#header .header-img{
+  text-align: right;
+  /* or we can use "d-flex justify-content-end" to align the picture at right side. in div.header-img */
+}
+#header .header-img>img{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+/* @-webkit-keyframes isn't necessary also we can omit it */
+/* Applying twice is just for different browsers support rendering animation */
+
+@keyframes up-down {
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+/* ===============================================================
+#Responsive Code
+=============================================================== */
+
+@media (max-width: 991px){
+  #header{
+    height: 80vh;
+    text-align: center;
+  }
+  #header .header-img{
+    text-align: center;
+  }
+  #header .header-img img{
+    width: 60%;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 768px){
+  #header h1{
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  #header h2{
+    font-size: 28px;
+  }
+  #header .header-img img{
+    width: 70%;
+  }
 }
 
-@keyframes App-logo-spin {
+
+
+
+
+
+
+/* .nav-link:visited{
+  color:rgb(122, 15, 86) !important;
+} */
+
+
+
+
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
+
